@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         rollbutton.setOnClickListener {
             rollDice()
         }
-        val resetbutton: Button = findViewById(R.id.reset_button)
+        val resetbutton: Button = findViewById(R.id.reset_button) //for Reset button
         resetbutton.setOnClickListener {
             resetdice()
         }

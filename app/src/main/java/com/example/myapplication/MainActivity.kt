@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
         randomimage=findViewById(R.id.dice_image)
     }
-
+/* function for reset dice */
     private fun resetdice() {
         randomimage.setImageResource(R.drawable.empty_dice)
     }

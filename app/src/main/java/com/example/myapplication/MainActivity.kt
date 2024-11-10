@@ -1,15 +1,9 @@
 package com.example.myapplication
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.myapplication.R.id.dice_image
 import java.util.Random
 
 class MainActivity : AppCompatActivity() {
@@ -22,14 +16,14 @@ class MainActivity : AppCompatActivity() {
         rollbutton.setOnClickListener {
             rollDice()
         }
-        val resetbutton: Button = findViewById(R.id.reset_button) //for Reset button
-        resetbutton.setOnClickListener {
+        val `reset-button`: Button = findViewById(R.id.reset_button) //for Reset button
+        `reset-button`.setOnClickListener {
             resetdice()
         }
         randomimage=findViewById(R.id.dice_image)
     }
-/* function for reset dice */
-    private fun resetdice() {
+// function for reset dice
+private fun resetdice() {
         randomimage.setImageResource(R.drawable.empty_dice)
     }
 
